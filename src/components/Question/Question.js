@@ -3,9 +3,11 @@ import { useState } from 'react'
 
 function Question () {
     const [currentQuestion, setCurrentQuestion] = useState(0)
+
     const questions = DUMMY_DATA
 
-    const handleNext = () => {
+    const handleNext = (e) => {
+        e.preventDefault()
         const nextIndex = currentQuestion + 1
         setCurrentQuestion(nextIndex)
     }
@@ -13,12 +15,18 @@ function Question () {
     return (
         <div>
         <p>{questions[currentQuestion].questionText}</p>
+        <form>
         {questions[currentQuestion].options.map((option) => (
-            <button>
-                {option.text}
-            </button>
+            <>
+            <input 
+            type="radio" 
+            name={questions[currentQuestion]} 
+            value={option.text} />
+            <label>{option.text}</label>
+            </>
         ))}
-        <button onClick={handleNext}>Next</button>
+        <input type="submit" onClick={handleNext} value="Next" />
+        </form>
         </div>
     )
 }
