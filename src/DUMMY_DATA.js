@@ -4,19 +4,19 @@ const DUMMY_DATA = [
         id: 1,
         options: [
             {
-                text: "Option 1:1",
+                text: "Wrong",
                 isTrue: false
             }, 
             {
-                text: "Option 1:2",
+                text: "Wrong",
                 isTrue: false
             }, 
             {
-                text: "Option 1:3",
+                text: "Correct",
                 isTrue: true
             }, 
             {
-                text: "Option 1:4",
+                text: "Wrong",
                 isTrue: false
             }
         ]
@@ -26,19 +26,19 @@ const DUMMY_DATA = [
         id: 2,
         options: [
             {
-                text: "Option 2:1",
+                text: "Wrong",
                 isTrue: false
             }, 
             {
-                text: "Option 2:2",
+                text: "Correct",
                 isTrue: true
             }, 
             {
-                text: "Option 2:3",
+                text: "Wrong",
                 isTrue: false
             }, 
             {
-                text: "Option 2:4",
+                text: "Wrong",
                 isTrue: false
             }
         ]
@@ -48,19 +48,19 @@ const DUMMY_DATA = [
         id: 3,
         options: [
             {
-                text: "Option 3:1",
+                text: "Wrong",
                 isTrue: false
             }, 
             {
-                text: "Option 3:2",
+                text: "Wrong",
                 isTrue: false
             }, 
             {
-                text: "Option 3:3",
+                text: "Wrong",
                 isTrue: false
             }, 
             {
-                text: "Option 3:4",
+                text: "Correct",
                 isTrue: true
             }
         ]
@@ -70,19 +70,19 @@ const DUMMY_DATA = [
         id: 4,
         options: [
             {
-                text: "Option 4:1",
+                text: "Correct",
                 isTrue: true
             }, 
             {
-                text: "Option 4:2",
+                text: "Wrong",
                 isTrue: false
             }, 
             {
-                text: "Option 4:3",
+                text: "Wrong",
                 isTrue: false
             }, 
             {
-                text: "Option 4:4",
+                text: "Wrong",
                 isTrue: false
             }
         ]
@@ -92,19 +92,19 @@ const DUMMY_DATA = [
         id: 5,
         options: [
             {
-                text: "Option 5:1",
+                text: "Wrong",
                 isTrue: false
             }, 
             {
-                text: "Option 5:2",
+                text: "Wrong",
                 isTrue: false
             }, 
             {
-                text: "Option 5:3",
+                text: "Wrong",
                 isTrue: false
             }, 
             {
-                text: "Option 5:4",
+                text: "Correct",
                 isTrue: true
             }
         ]
