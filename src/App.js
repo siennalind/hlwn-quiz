@@ -1,9 +1,9 @@
-import Question from "./components/Question/Question"
+import GameStatus from './GameStatus'
 
 function App() {
   return (
     <>
-      <Question />
+      <GameStatus />
     </>
   )
 }

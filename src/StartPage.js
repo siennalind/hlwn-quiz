@@ -1,8 +1,9 @@
-function StartPage () {
+function StartPage ({ handleStart }) {
+    
     return (
         <>
             <p>Hello World</p>
-            <button>Start Quiz</button>
+            <button onClick={handleStart}>Start Quiz</button>
         </>
     )
 }

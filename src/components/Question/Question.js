@@ -1,7 +1,7 @@
 import DUMMY_DATA from '../../DUMMY_DATA'
 import { useState } from 'react'
 
-function Question () {
+function Question ({ handleFinish }) {
     const [currentQuestion, setCurrentQuestion] = useState(0)
     const [score, setScore] = useState(0)
     const [isCorrect, setIsCorrect] = useState(false)
@@ -27,9 +27,14 @@ function Question () {
 
     const handleNext = () => {
         const nextIndex = currentQuestion + 1
-        setCurrentQuestion(nextIndex)
-        setSubmitted(false)
-        setFeedback('')
+
+        if (nextIndex >= questions.length) {
+            handleFinish()
+        } else {
+            setCurrentQuestion(nextIndex)
+            setSubmitted(false)
+            setFeedback('')
+        }
     }
 
     const handleSelect = (answer) => {
