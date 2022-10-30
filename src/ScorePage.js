@@ -2,7 +2,7 @@ function ScorePage ({ handleRestart }) {
 
     return (
         <div>
-            <p>Your score was x out of x</p>
+            <p>You finished the quiz, well done!</p>
             <button onClick={handleRestart}>Back to Start</button>
         </div>
     )

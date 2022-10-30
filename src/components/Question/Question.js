@@ -1,4 +1,4 @@
-import DUMMY_DATA from '../../DUMMY_DATA'
+import Questions from '../../Questions'
 import { useState } from 'react'
 
 function Question ({ handleFinish }) {
@@ -8,7 +8,7 @@ function Question ({ handleFinish }) {
     const [submitted, setSubmitted] = useState(false)
     const [feedback, setFeedback] = useState('')
 
-    const questions = DUMMY_DATA
+    const questions = Questions
 
     const handleSubmit = (e) => {
         e.preventDefault()
