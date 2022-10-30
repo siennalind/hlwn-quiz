@@ -1,10 +1,11 @@
 function ScorePage ({ handleRestart }) {
 
     return (
-        <div>
-            <p>You finished the quiz, well done!</p>
+        <>
+            <p>You made it through, well done! Maybe you'd like to haver another try?</p>
             <button onClick={handleRestart}>Back to Start</button>
-        </div>
+            <p>I hope to see you here again next year for a new challenge...</p>
+        </>
     )
 }
 

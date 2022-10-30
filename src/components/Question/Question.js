@@ -17,9 +17,9 @@ function Question ({ handleFinish }) {
         if (isCorrect) {
             newScore = score + 1
             setScore(newScore)
-            setFeedback('You were right!')
+            setFeedback('You got it right, you just might make it through the night!')
         } else {
-            setFeedback(`You were incorrect`)
+            setFeedback(`Oh no, you got it wrong! Careful or the creepy crawlies will come for you...`)
         }
 
         setSubmitted(true)
@@ -42,31 +42,30 @@ function Question ({ handleFinish }) {
     }
 
     return (
-        <div>
-        <p>{questions[currentQuestion].questionText}</p>
+        <>
+        <p 
+        className="question-no">Question {currentQuestion + 1} of {Questions.length + 1}</p>
+        <p className="question">{questions[currentQuestion].questionText}</p>
         <form key={questions[currentQuestion].questionText}>
         {questions[currentQuestion].options.map((option) => (
-            <>
+            <span class="radio-span">
             <input 
+            className="radio-input"
             type="radio" 
             name={questions[currentQuestion]} 
             value={option.text} 
             onClick={() => {handleSelect(option)}} 
             />
-            <label>{option.text}</label>
-            </>
+            <label className="radio-label">{option.text}</label>
+            </span>
         ))}
-        <input 
-        onClick={handleSubmit} 
-        type="submit" 
-        value="Submit" 
-        disabled={submitted}
-        />
         </form>
-        <p>Your score is {score}</p>
+        <button 
+        onClick={handleSubmit} 
+        disabled={submitted}>Submit</button>
         <p>{feedback}</p>
         <button onClick={handleNext}>Next</button>
-        </div>
+        </>
     )
 }
 

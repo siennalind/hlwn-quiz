@@ -5,7 +5,6 @@ import ScorePage from './ScorePage'
 
 function GameStatus () {
     const [gameState, setGameState] = useState("start")
-    const [finalScore, setFinalScore] = useState(0)
 
     const handleStart = () => {
         setGameState("questions")
